@@ -199,9 +199,31 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
         print("\nHet eindvermogen is: " . $vermogen);
         print("\nHet aantal jaren is: " . $jaren);
         break;
+
+    //opdracht 4
     case 4:
-        //4
+        $uitdaging = 1;
+        $ervaringspunten = 0;//doordat hier eerst 1 stond, kwam je nooit precies op 1000, maar op 1001
+        $puzzelervaring = 50;
+        $monsterervaring = 100;
+
+        while ($ervaringspunten < 1000){//en we moeten deze statement aanpassen naar < 1000
+            if ( $uitdaging % 4 == 0 ){
+                // de speler komt een monster tegen en bevecht deze
+                $ervaringspunten += $monsterervaring;
+            }
+            else {
+                // de speler lost een puzzel op
+                $ervaringspunten += $puzzelervaring;
+            }
+            $uitdaging++;
+        }
+
+        print(($uitdaging - 1) . "\n");//-1, omdat je de laatste uitdaging niet hoeft mee te tellen
+        print("De speler heeft precies 1000 ervaringspunten vergaard en heeft daarmee niveau 1 bereikt.");
         break;
+
+    //als de input anders is dan 1 -> 4
     default:
         print("Bestaat niet");
         break;
