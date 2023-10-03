@@ -181,7 +181,23 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
 
     //opdracht 3
     case 3:
-        
+        print("\nNa hoeveel jaar is mijn vermogen verdubbeld bij een bepaalde rente?");
+
+        print("\nHet startvermogen is: ");
+        $vermogen = (int) fgets(STDIN);
+        print("Het rentepercentage is: ");
+        $rente = (int) fgets(STDIN);
+        $groeiFactor = ($rente / 100) + 1;
+
+        $dubbeleVermogen = $vermogen * 2;
+        $jaren = 0;
+        while($vermogen < $dubbeleVermogen) {
+            $vermogen *= $groeiFactor;
+            $jaren++;
+        }
+
+        print("\nHet eindvermogen is: " . $vermogen);
+        print("\nHet aantal jaren is: " . $jaren);
         break;
     case 4:
         //4
