@@ -141,11 +141,47 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
 
         //r is letterlijk hetzelfde als a-c. ga ik niet doen
         break;
+
+    //opdracht 2
     case 2:
-        //2
+        function gooiSteen() {
+            $newValue = rand(1,6);
+            print("\nHet getrokken getal is: " . $newValue);
+
+            if($newValue % 2 == 0) {
+                return $newValue;//het getal is even
+            } else {
+                return -1;//-1 is een signaal voor het programma om te stoppen
+            }
+        }
+
+        function trekken($tries, $gameScore) {
+            for($i = 0; $i < $tries; $i++) {
+                $cardValue = rand(1,52);
+                print("\nDe waarde van de kaart is: " . $cardValue);
+                $gameScore += $cardValue;//voegt de waarde van de kaart toe aan de score
+            }
+            return $gameScore;
+        }
+
+        $gameActive = true;//zodat ik geen break-statement hoef te gebruiken
+        $gameScore = 0;
+
+        while($gameActive) {
+            $tries = gooiSteen();
+            if($tries != -1) {
+                $gameScore = trekken($tries, $gameScore);//nieuwe game score wordt hier toegewezen
+            } else {
+                $gameActive = false;//kon hier een break gebruiken, maar ik ben dat afgeleerd op m'n vorige opleiding
+            }
+        }
+
+        print("\nEr zijn in totaal " . $gameScore . " punten gescoord!");
         break;
+
+    //opdracht 3
     case 3:
-        //3
+        
         break;
     case 4:
         //4
