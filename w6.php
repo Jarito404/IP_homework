@@ -55,7 +55,14 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
 
     //opdracht 4
     case 4:
-        
+        $klassenlijst = array("tobias", "hasna", "aukje", "fred", "sep", "koen", "wahed", "anna", "jackie", "rashida", "winston", "sammy", "manon", "ben", "karim", "bart", "lisa");
+
+        $klassenlijst[] = "tom";//om aan het einde van een array wat in te voegen, zet je niks tussen de haken. voor opdracht c
+
+        foreach($klassenlijst as $nr => $naam) {
+            print(($nr + 1) . " " . ucfirst($naam) . "\n");//ucfirst() functie toegepast voor opdracht b. ($nr + 1) toegevoegd voor opdracht d
+    }
+
         break;
     //als de input anders is dan een nummer van een opdracht
     default:
