@@ -61,9 +61,32 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
 
         foreach($klassenlijst as $nr => $naam) {
             print(($nr + 1) . " " . ucfirst($naam) . "\n");//ucfirst() functie toegepast voor opdracht b. ($nr + 1) toegevoegd voor opdracht d
-    }
-
+        }
         break;
+
+    //opdracht 5
+    case 5:
+        $cijfers = array(8.0, 1.9, 7.5, 4.3, 5.4, 6.3, 2.3, 5.2, 9.7);
+        $voldoendes = array();
+
+        for ($i = 0; $i < count($cijfers); $i++) {
+            $cijfer = $cijfers[$i];
+            if ($cijfer >= 5.5) {
+                $voldoendes[] = $cijfer;
+            }
+        }
+
+        print("Voldoendes: \n");
+        foreach ($voldoendes as $key => $cijfer) {
+            print("$cijfer \n");
+        }
+        break;
+
+    //opdracht 6
+    case 6:
+        
+        break;
+
     //als de input anders is dan een nummer van een opdracht
     default:
         print("Bestaat niet");
