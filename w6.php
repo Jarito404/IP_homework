@@ -84,7 +84,20 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
 
     //opdracht 6
     case 6:
-        
+        $getallen = array(1, 8, 12, 7, 14, -13, 8, 1, -1, 14, 7);
+
+        print_r($getallen);
+
+        $max = max($getallen);
+        print("\nDe max is: " . $max);
+
+        print("\nDe som van de array is: " . array_sum($getallen));
+
+        $som = 0;
+        foreach($getallen as $getal) {
+            $som += $getal;
+        }
+        print("\n$som");
         break;
 
     //als de input anders is dan een nummer van een opdracht
