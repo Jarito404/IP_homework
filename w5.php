@@ -58,16 +58,14 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
         //h
         echo "\nGeef de breedte van de pyramide: ";
         $breadthPyr = (int) fgets(STDIN);
-
-        $m = 0;
         $star = "*";
-        while($m < $breadthPyr) {//eerst ascenden
+
+        while(strlen($star) < ($breadthPyr - 1)) {//eerst ascenden
             print($star);
             $star .= "*";
             $m++;
             print("\n");
         }
-        $star = substr($star, 0, -1);//verwijder de laatste toevoeging van vorige while-loop
         while(strlen($star) > 1) {//nu descenden
             $star = substr($star, 0, -1);
             print($star);
@@ -172,7 +170,7 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
             if($tries != -1) {
                 $gameScore = trekken($tries, $gameScore);//nieuwe game score wordt hier toegewezen
             } else {
-                $gameActive = false;//kon hier een break gebruiken, maar ik ben dat afgeleerd op m'n vorige opleiding
+                $gameActive = false;//de while-statement gaat naar false
             }
         }
 
