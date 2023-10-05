@@ -100,6 +100,56 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
             }
         }
         print("\nDe som van positieve getallen berekend met for-each: $posSom");
+
+        $posNegSom = 0;
+        foreach($getallen as $getal) {
+            if($getal <= 0) {
+                $getal *= -1;
+            }
+            $posNegSom += $getal;
+        }
+        print("\nDe som van positieve getallen berekend met for-each: $posNegSom");
+
+        $counter = 0;
+        $greatestNum = 0;
+        foreach($getallen as $getal) {
+            if($getal > $greatestNum) {
+                $greatestNum = $getal;
+                $counter = 0;//reset de counter weer als een nieuwe max bestaat
+            }
+            if($getal == $greatestNum) {
+                $counter++;//een cijfer even groot als de max is gevonden
+            }
+        }
+        print("\nHet grootste getal is: $greatestNum");
+        print("\nDeze is $counter teruggekomen.");
+        break;
+
+    //opdracht 7
+    case 7:
+        $telefoonnummers = array("Mickey Mouse" => "038-4699776",
+                                "Guus Geluk" => "0578-121212",
+                                "Donald Duck" => "010-2311512");
+
+        foreach($telefoonnummers as $index => $waarde) {
+            print("$index $waarde \n");
+        }
+
+        print("\nWie krijgt een nieuw nummer?\n");
+        $target = trim(fgets(STDIN));
+
+        if(array_key_exists($target, $telefoonnummers)) {
+            print("\nWat is het nieuwe nummer?\n");
+            $newNumber = trim(fgets(STDIN));
+
+            $telefoonnummers[$target] = $newNumber;
+            print("\nNieuwe gegevens:\n");
+            foreach($telefoonnummers as $index => $waarde) {
+                print("$index $waarde \n");
+            }
+        } else {
+            print("\nDit stripfiguur komt niet in het telefoonboek voor!");
+        }
         break;
 
     //als de input anders is dan een nummer van een opdracht
