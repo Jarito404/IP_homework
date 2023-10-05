@@ -93,11 +93,13 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
 
         print("\nDe som van de array is: " . array_sum($getallen));
 
-        $som = 0;
+        $posSom = 0;
         foreach($getallen as $getal) {
-            $som += $getal;
+            if($getal >= 0) {
+                $posSom += $getal;
+            }
         }
-        print("\n$som");
+        print("\nDe som van positieve getallen berekend met for-each: $posSom");
         break;
 
     //als de input anders is dan een nummer van een opdracht
