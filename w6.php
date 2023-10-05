@@ -154,7 +154,57 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
 
     //opdracht 8
     case 8:
-        
+        //a
+        $prijzen = array(
+            "cola" => 2.50,
+            "koffie" => 2,
+            "thee" => 1.75,
+            "bier" => 2.25,
+            "wijn" => 3.75,
+            "water" => 0.50
+        );
+
+        //b
+        $drink = "";
+        $greatestNum = 0;
+        foreach($prijzen as $drank => $prijs) {
+            if ($prijs > $greatestNum) {
+                $drink = $drank;
+                $greatestNum = $prijs;
+            }
+        }
+        print("\nDe duurste drank is $drink met een prijs van $greatestNum");
+
+        //c
+        print("\nGemiddelde van de array is: " . (array_sum($prijzen) / count($prijzen)));
+
+        //d & e
+        $prijzen['thee'] += 0.10;
+        $prijzen['water'] *= 2;
+        print("\nNieuwe prijs van thee: ".$prijzen['thee']);
+        print("\nNieuwe prijs van water: ".$prijzen['water']);
+
+        //f
+        $bestelling1 = array("cola","bier","cola","wijn","water","koffie","koffie","koffie");
+
+        //g
+        foreach($bestelling1 as $drank) {
+            print("\n".$drank);
+        }
+
+        //h
+        $totalePrijs = 0;
+        foreach($bestelling1 as $drank) {
+            $totalePrijs += $prijzen[$drank];
+        }
+
+        //i
+        $bestelling2 = array("cola" => 2,
+                            "bier" => 1,
+                            "wijn" => 1,
+                            "water" => 1,
+                            "koffie" => 3);
+        //laatste stukje nog programmeren dan ben ik klaar
         break;
 
     //als de input anders is dan een nummer van een opdracht

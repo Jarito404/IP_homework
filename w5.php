@@ -200,7 +200,7 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
 
     //opdracht 4
     case 4:
-        $uitdaging = 1;
+        $uitdaging = 0;
         $ervaringspunten = 0;//doordat hier eerst 1 stond, kwam je nooit precies op 1000, maar op 1001
         $puzzelervaring = 50;
         $monsterervaring = 100;
@@ -217,7 +217,7 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
             $uitdaging++;
         }
 
-        print(($uitdaging - 1) . "\n");//-1, omdat je de laatste uitdaging niet hoeft mee te tellen
+        print($uitdaging . "\n");
         print("De speler heeft precies 1000 ervaringspunten vergaard en heeft daarmee niveau 1 bereikt.");
         break;
 
