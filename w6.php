@@ -152,6 +152,11 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
         }
         break;
 
+    //opdracht 8
+    case 8:
+        
+        break;
+
     //als de input anders is dan een nummer van een opdracht
     default:
         print("Bestaat niet");
