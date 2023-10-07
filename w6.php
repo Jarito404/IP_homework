@@ -197,6 +197,7 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
         foreach($bestelling1 as $drank) {
             $totalePrijs += $prijzen[$drank];
         }
+        print("\nDe totale prijs is: €$totalePrijs.");
 
         //i
         $bestelling2 = array("cola" => 2,
@@ -204,7 +205,13 @@ switch($choice) {//case-switch is best wel similar aan allemaal if-statements
                             "wijn" => 1,
                             "water" => 1,
                             "koffie" => 3);
-        //laatste stukje nog programmeren dan ben ik klaar
+
+        $totalePrijs2 = 0;
+        foreach($bestelling2 as $drank => $aantal) {
+            print("\nEr is $aantal keer $drank besteld.");
+            $totalePrijs2 += $prijzen[$drank] * $aantal;
+        }
+        print("\nDe prijs dat berekend is met het nieuwe structuur is: €$totalePrijs2.");
         break;
 
     //als de input anders is dan een nummer van een opdracht
