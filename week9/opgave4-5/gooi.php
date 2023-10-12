@@ -7,7 +7,7 @@ if(!isset($_GET["aantal"])) {//als aantal niet bestaat wordt je geredirect naar 
 $aantal = (int) $_GET["aantal"];//aantal is 0 als er iets anders dan een integer in de url staat
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
     <meta charset="utf-8">
     <title>Opgave 4</title>
