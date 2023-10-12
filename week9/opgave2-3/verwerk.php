@@ -2,6 +2,19 @@
 if(!isset($_POST["indruk"]))
     header("Location: index.php");//een assertion om te kijken of er wel een indruk wordt meegegeven. ook zodat we geen warning krijgen in dat geval
 
+$indrukArray = array(
+    1 => "Slecht",
+    2 => "Slecht",
+    3 => "Slecht",
+    4 => "Matig",
+    5 => "Matig",
+    6 => "Goed",
+    7 => "Goed",
+    8 => "Goed",
+    9 => "Super",
+    10 => "Super",
+);//voor de array/tabel van opgave 3
+
 $cijfer = $_POST["cijfer"];
 $leeftijd = $_POST["leeftijd"];
 $indruk = $_POST["indruk"];
@@ -49,13 +62,18 @@ function checkLeeftijd($leeftijd) {
     }
 
     //pas als alle checks false opleveren is de input goed
-    else {?>
+    else {
+        if($indrukArray[$cijfer] != $indruk) {
+            print("Dus je beweert dat $cijfer gewoon " . lcfirst($indruk) . " is?" . "<br>");
+        } else {
+        ?>
         <div id="result">
             Je geeft de intro een <?php echo $cijfer ?><br>
             Je bent volgens je eigen zeggen <?php echo $leeftijd ?> jaar oud<br>
             Je vond de algemene indruk van de intro <?php echo $indruk ?>
         </div>
     <?php }
+    }
     ?>
     <div id="redirect">
         <br><a href="index.php">Terug naar evaluatie.</a>
