@@ -25,7 +25,7 @@
     <div id="form">
         <form method="post" action="verwerk.php">
             <label>
-                Rapportcijfer: <input type="text" id="cijfer" name="cijfer">
+                Rapportcijfer: <input type="number" id="cijfer" name="cijfer">
             </label>
             <label>
                 Leeftijd: <input type="number" name="leeftijd">
