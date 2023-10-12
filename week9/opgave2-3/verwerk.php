@@ -1,6 +1,8 @@
 <?php
-if(!isset($_POST["indruk"]))
-    header("Location: index.php");//een assertion om te kijken of er wel een indruk wordt meegegeven. ook zodat we geen warning krijgen in dat geval
+if(!isset($_POST["indruk"])) {
+    header("Location: index.html");//een assertion om te kijken of er wel een indruk wordt meegegeven. ook zodat we geen warning krijgen in dat geval
+    exit();
+}
 
 $indrukArray = array(
     1 => "Slecht",
