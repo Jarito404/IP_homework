@@ -15,7 +15,7 @@
         Naam: <input type="text" name="naam">
     </label><br>
     <label>
-         Leeftijd: <input type="text" name="leeftijd">
+         Leeftijd: <input type="number" name="leeftijd">
     </label><br>
     <input type="submit" value="Verwerk!">
 </form>
