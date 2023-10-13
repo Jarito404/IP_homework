@@ -1,6 +1,6 @@
 <?php
 if(!isset($_GET["aantal"])) {//als aantal niet bestaat wordt je geredirect naar de index page
-    header("Location: index.html");
+    header("Location: index.php");
     exit();
 }
 

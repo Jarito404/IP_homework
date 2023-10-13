@@ -1,6 +1,6 @@
 <?php
 if(!isset($_POST["indruk"])) {
-    header("Location: index.html");//een assertion om te kijken of er wel een indruk wordt meegegeven. ook zodat we geen warning krijgen in dat geval
+    header("Location: index.php");//een assertion om te kijken of er wel een indruk wordt meegegeven. ook zodat we geen warning krijgen in dat geval
     exit();
 }
 
@@ -78,7 +78,7 @@ function checkLeeftijd($leeftijd) {
     }
     ?>
     <div id="redirect">
-        <br><a href="index.php">Terug naar evaluatie.</a>
+        <br><a href="index.html">Terug naar evaluatie.</a>
     </div>
 </body>
 </html>
