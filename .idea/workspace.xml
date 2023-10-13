@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02c01cf9-9c89-4084-8b76-e6118494832d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/week9/opgave6/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week9/opgave6/verwerk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week9/opgave7/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week9/opgave7/verwerkNaam.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week9/opgave2-3/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/week9/opgave2-3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week9/opgave2-3/verwerk.php" beforeDir="false" afterPath="$PROJECT_DIR$/week9/opgave2-3/verwerk.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week9/opgave4-5/gooi.php" beforeDir="false" afterPath="$PROJECT_DIR$/week9/opgave4-5/gooi.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
