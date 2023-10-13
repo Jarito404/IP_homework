@@ -1,6 +1,7 @@
 <?php
 if($_POST["naam"] == NULL) {
     header("Location: index.php");//assertion tegen een lege naam
+    exit();
 }
 
 $voornaam = $_POST["naam"];
