@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02c01cf9-9c89-4084-8b76-e6118494832d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/week9/opgave12/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oefentoets2/1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oefentoets2/2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oefentoets2/3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oefentoets2/4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +34,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2Wd8IO94TR2E5oyBkoFwxsqMpmg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
